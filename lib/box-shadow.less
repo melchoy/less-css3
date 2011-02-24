@@ -11,3 +11,17 @@
   -o-box-shadow: @x @y @blur @color inset;
   box-shadow: @x @y @blur @color inset;
 }
+
+.box-shadow-spread(@x, @y, @spread, @distance, @color) {
+  -webkit-box-shadow: @x @y @spread @distance @color;
+  -moz-box-shadow: @x @y @spread @distance @color;
+  -o-box-shadow: @x @y @spread @distance @color;
+  box-shadow: @x @y @spread @distance @color;
+}
+
+.box-shadow-spread-inset(@x, @y, @spread, @distance, @color) {
+  -webkit-box-shadow: @x @y @spread @distance @color inset;
+  -moz-box-shadow: @x @y @spread @distance @color inset;
+  -o-box-shadow: @x @y @spread @distance @color inset;
+  box-shadow: @x @y @spread @distance @color inset;
+}
